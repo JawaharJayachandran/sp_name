@@ -10,7 +10,7 @@ ALTER procedure [dbo].[sp_sum_search_student]
 @l_error_desc varchar(200)=NULL OUTPUT
 AS
 BEGIN TRY 
-print"this dummy1"
+
 select Student_name,sum_mark,DENSE_RANK() over (order by sum_mark desc) from (
 
 select student_name as Student_name,sum(convert(int,marks)) as sum_mark from trans..student group by student_name ) a

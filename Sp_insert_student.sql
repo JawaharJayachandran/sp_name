@@ -14,7 +14,6 @@ ALTER procedure [dbo].[Sp_insert_student]
 @l_error_desc varchar(200)=null output
 AS
 Begin Try
-print"this dummy1"
 	declare
 	@l_row_count int
 
