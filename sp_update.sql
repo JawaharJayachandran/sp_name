@@ -19,7 +19,7 @@ as
 Begin try 
 declare
 @l_rowcount int
-print"this dummy1"
+
 if not exists ( select 1 from trans..student where student_name=@i_student_name)
 begin
 	throw 5001,'No record found',1;
