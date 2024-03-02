@@ -18,7 +18,7 @@ begin try
 declare
 @l_mysql varchar(2000)
 
-
+print"this dummy1"
 
 select @l_mysql='drop table if exists trans..'+@l_table_name
 select @l_mysql

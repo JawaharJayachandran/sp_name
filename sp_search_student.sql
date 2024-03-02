@@ -14,7 +14,7 @@ As
 begin try
 declare
 @l_row_count int
-
+print"this dummy1"
 select student_name,student_id,subjects,Marks,DENSE_RANK() over (partition by subjects order by marks desc) from trans..student
 where ISNULL(student_name,'')=coalesce(@i_student_name,ISNULL(student_name,''))
 and   ISNULL(student_id,'')=coalesce(@i_student_id,ISNULL(student_id,''))

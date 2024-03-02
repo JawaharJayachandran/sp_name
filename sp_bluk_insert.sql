@@ -22,7 +22,8 @@ As
 											
 
 Begin try
-print"this dummy"
+print"this dummy1"
+print"this dummy1"
 declare
 @l_row_count int,
 @l_param varchar(2000)
